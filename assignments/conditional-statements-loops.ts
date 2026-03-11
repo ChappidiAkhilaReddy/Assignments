@@ -23,7 +23,7 @@ if(transactions[i]<0){
     creditAmount=creditAmount+transactions[i];
 }
 }
-console.log(`Total credit amount are ${creditAmount} and debit amount are ${debitAmount}`);
+console.log(`Total credit amount is ${creditAmount} and debit amount is ${debitAmount}`);
 
 //Print total amount remaining at the end in Bank Account
  let totalBalance:number=creditAmount-debitAmount;

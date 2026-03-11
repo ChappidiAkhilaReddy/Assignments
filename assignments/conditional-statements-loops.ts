@@ -34,7 +34,7 @@ Transaction with Amount” and also print total number of suspicious transaction
 let suspiciousTransactionsCount=0;
 for(let i=0; i<transactions.length;i++){
     if(transactions[i]>10000){
-        console.log(`Suspicious credit transcaction :  ${transactions[i]}`);
+        console.log(`Suspicious credit transcaction : ${transactions[i]}`);
         suspiciousTransactionsCount++;
     }
     else if(transactions[i]< -10000){

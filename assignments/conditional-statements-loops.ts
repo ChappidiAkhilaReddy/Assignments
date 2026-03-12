@@ -1,7 +1,4 @@
-
 let transactions:number[]=[50000,-2000,3000,-15000,-200,-300,4000,-3000];
-
-//Print total number of credit and debit transactions completed
 let debitCount:number=0;
 let creditCount:number=0;
 let debitAmount:number=0;
@@ -25,6 +22,7 @@ if(transactions[i]<0){
     }
 }
 }
+//Print total number of credit and debit transactions completed
 console.log(`Total number of credit transactions are ${creditCount} and debit transactions are ${debitCount}`);
 
 //Print the total amount credited and debited in account

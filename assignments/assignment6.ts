@@ -4,7 +4,7 @@ if (result) {
     console.log(`Given number ${num} is a prime number`);
 }
 else {
-    console.log(`Given number ${num} is a not prime number`);
+    console.log(`Given number ${num} is not a prime number`);
 }
 
 function checkPrimeNumber(num: number): boolean {

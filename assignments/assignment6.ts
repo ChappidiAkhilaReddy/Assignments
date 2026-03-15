@@ -1,10 +1,10 @@
-let num: number = 678;
+let num: number = 25;
 let result: boolean = checkPrimeNumber(num);
 if (result) {
-    console.log(`Given number ${num} is a prime number`)
+    console.log(`Given number ${num} is a prime number`);
 }
 else {
-    console.log(`Given number ${num} is a not prime number`)
+    console.log(`Given number ${num} is a not prime number`);
 }
 
 function checkPrimeNumber(num: number): boolean {

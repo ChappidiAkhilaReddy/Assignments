@@ -42,22 +42,32 @@ await date.click();
 
 // 8.Search and Select Computer Science and English
 const subjectInuput = await page.locator('input#subjectsInput');
-await subjectInuput.pressSequentially('sci');
+await subjectInuput.fill('sci');
 await subjectInuput.press('Enter');
 
-await subjectInuput.pressSequentially('eng');
+await subjectInuput.fill('Eng');
 await subjectInuput.press('Enter');
 
 // 9.Select Hobbies as Sports and Reading
-const hobbiesSportsCheckbox = await page.locator('input#hobbies-checkbox-1');
-await hobbiesSportsCheckbox.check();
+const hobbiesSportsCheckbox = await page.locator('//label[text()="Sports"]/preceding-sibling::input');
+await hobbiesSportsCheckbox.click();
 
-const hobbiesReadingCheckbox = await page.locator('input#hobbies-checkbox-2');
-await hobbiesReadingCheckbox.check();
+const hobbiesReadingCheckbox = await page.locator('//label[text()="Reading"]/preceding-sibling::input');
+await hobbiesReadingCheckbox.click();
 
 // 10.Upload photo
 const uploadPicture = await page.locator('input#uploadPicture');
 await uploadPicture.setInputFiles("D:\\Academy Playwright learn\\AutomationTraining\\image.jpg");
+
+//select state and city
+const state = await page.locator('input#react-select-3-input');
+await state.fill('Rajasthan');
+await state.press('Enter');
+
+const city = await page.locator('//div[@id="city"]//input');
+await city.click();
+await city.fill('Jaipur');
+await city.press('Enter');
 
 // 11.Submit Details
 const submitButton = await page.locator('button#submit');

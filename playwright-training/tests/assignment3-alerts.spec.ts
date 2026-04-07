@@ -6,10 +6,10 @@ test('Assignment3 Alerts', async ({ page }) => {
     await page.goto("https://demoqa.com/alerts");
 
     // 2. Locate Alert buttons to trigger the alerts
-    const alertFrameWindows = await page.locator('//div[text()="Alerts, Frame & Windows"]');
-    await alertFrameWindows.click();
-    const alertbtn = await page.locator('//a[@href="/alerts"]/span');
-    await alertbtn.click();
+    // const alertFrameWindows = await page.locator('//div[text()="Alerts, Frame & Windows"]');
+    // await alertFrameWindows.click();
+    // const alertbtn = await page.locator('//a[@href="/alerts"]/span');
+    // await alertbtn.click();
 
     // 3. Click on the information alert and copy the alert message and then select OK button
     page.once('dialog', async (dialog) => {

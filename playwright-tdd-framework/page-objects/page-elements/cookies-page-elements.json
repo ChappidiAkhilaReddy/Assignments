@@ -1,0 +1,15 @@
+{
+   "cookiesHeader": "div#CybotCookiebotDialogBodyContentTitle",
+   "cookiesContent": "div#CybotCookiebotDialogBodyContentText",
+   "allowAllBtn": "button#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll",
+   "allowAllSelectionBtn": "button#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection",
+   "declineBtn": "button#CybotCookiebotDialogBodyButtonDecline",
+   "creatioLogo": "img#CybotCookiebotDialogPoweredbyImage",
+   "cookieBotLogo": "a#CybotCookiebotDialogPoweredbyCybot",
+   "necessarySwitchButton": "input#CybotCookiebotDialogBodyLevelButtonNecessary",
+   "preferencesSwitchButton": "input#CybotCookiebotDialogBodyLevelButtonPreferences",
+   "statisticsSwitchButton": "input#CybotCookiebotDialogBodyLevelButtonStatistics",
+   "marketingSwitchButton": "input#CybotCookiebotDialogBodyLevelButtonMarketing",
+   "showDetailsLink": "a#CybotCookiebotDialogBodyEdgeMoreDetailsLink",
+   "cookiePopupExpandedView": "a#CybotCookiebotDialogNavDetails"
+}

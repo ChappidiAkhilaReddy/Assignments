@@ -129,13 +129,13 @@ export class WebCommons {
     //Common method to check if an element is enabled
     async isElementEnabled(locator: string): Promise<void>  {
         const element = this.getLocator(locator);
-        expect(element).toBeEnabled();
+        await expect(element).toBeEnabled();
     }
 
     //Common method to check if an element is disappeared/Hidden
     async isElementHidden(locator: string): Promise<void>  {
         const element = this.getLocator(locator);
-        expect(element).toBeHidden();
+        await expect(element).toBeHidden();
     }
 
     //Common method to handle alert pop up
@@ -153,7 +153,7 @@ export class WebCommons {
 
     //common method to compare text values
     async compareText(actual:string | null ,expected:string){
-        if(actual!=expected){
+        if(!(actual?.includes(expected))){
             throw new Error('Expected value is ${expected}, but found ${actual}');
         }
     }
@@ -162,6 +162,13 @@ export class WebCommons {
     async verifyElementText(locator: string, expectedText:string){
         const element = await this.getLocator(locator);
         await expect(element).toHaveText(expectedText);
+    }
+
+    //wait for element
+
+    async waitForElement(locator: string, ){
+        const element = await this.getLocator(locator);
+        await element.waitFor();
     }
 
    

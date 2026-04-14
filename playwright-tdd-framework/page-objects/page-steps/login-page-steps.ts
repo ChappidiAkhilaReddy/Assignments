@@ -60,6 +60,7 @@ export class LoginPageSteps{
 
     //Method to verify login error message 
     async verifyLoginErrorMessage(): Promise<void> {
+        await this.web.waitForElement(loginPage.loginErrorMessage);
         await this.web.isElementVisible(loginPage.loginErrorMessage);
     }
 

@@ -16,6 +16,7 @@ export class HomePageSteps {
 
     //Method to verify home page is displayed. 
     async verifyHomePageIsDisplayed(): Promise<void> {
+        await this.web.waitForElement(homePage.homePageHeaderLink);
         await this.web.isElementVisible(homePage.homePageHeaderLink);
     }
 
